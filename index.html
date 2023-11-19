@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>teste</h1>
+    <br />
+    <br />
+    <p class="titulo"></p>
+    <br />
+    <p class="ingredientes"></p>
+    <br />
+    <p class="preparo"></p>
+
+    <script>
+      $(document).ready(function () {
+        $.getJSON("receitas.json", function (data) {
+          console.log(data);
+
+          $(".titulo").html(data.titulo);
+          $(".preparo").html(data.preparo);
+        }).fail(function () {
+          console.log("check your data");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "001",
+    "titulo": "Mousssssse de limão",
+    "ingredientes": "1 lata de leite condensado, 1 lata de creme de leite, 1/2 xícara de limão espremido",
+    "ingredientesBase": {
+      "0": "3",
+      "1": "Leite condensado",
+      "2": "Creme de leite",
+      "3": "Limao"
+    },
+    "preparo": "Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco de limão aos poucos. Quando a massa ficar consistente, coloque em um recipiente de vidro e leva à geladeira.",
+    "imagem": "./imagens/delfina-iacub-oFHTVZITMoc-unsplash.jpg"
+  }
+]
