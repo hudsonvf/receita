@@ -23,7 +23,9 @@
         $.getJSON("./receitas.json", function (data) {
           console.log(data);
 
-          $(".titulo").innerHTML = `${data.titulo}`;
+          $(".titulo").html(data.titulo);
+          $("p").html(data.titulo);
+          $(".ingredientes").html(data.ingredientes);
           $(".preparo").html(data.preparo);
         }).fail(function () {
           console.log("check your data");
