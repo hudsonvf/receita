@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <title>Document</title>
   </head>
@@ -12,25 +11,84 @@
     <h1>teste</h1>
     <br />
     <br />
-    <p class="titulo"></p>
-    <br />
-    <p class="ingredientes"></p>
-    <br />
-    <p class="preparo"></p>
+    <div class="">
+      <table>
+        <thead>
+          <th>id</th>
+          <th>titulo</th>
+          <th>ingredientes</th>
+          <th>ingredientesBase</th>
+          <th>preparo</th>
+          <th>imagem</th>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <script type="text/javascript">
+      let tableData = [
+        {
+          id: "001",
+          titulo: "Mousssssse de limão",
+          ingredientes:
+            "1 lata de leite condensado, 1 lata de creme de leite, 1/2 xícara de limão espremido",
+          ingredientesBase: {
+            0: "3",
+            1: "Leite condensado",
+            2: "Creme de leite",
+            3: "Limao",
+          },
+          preparo:
+            "Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco de limão aos poucos. Quando a massa ficar consistente, coloque em um recipiente de vidro e leva à geladeira.",
+          imagem: "./imagens/delfina-iacub-oFHTVZITMoc-unsplash.jpg",
+        },
 
-    <script>
-      $(document).ready(function () {
-        $.getJSON("./receitas.json", function (data) {
-          console.log(data);
+        {
+          id: "002",
+          titulo: "Bolo para café da tarde",
+          ingredientes:
+            "3 ovos, 2/3 de xícara de farinha com fermento, 1/2 xícara de açúcar refinado",
+          ingredientesBase: {
+            0: "3",
+            1: "Ovos",
+            2: "Farinha",
+            3: "Fermento",
+          },
+          preparo:
+            "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse.",
+          imagem: "./imagens/haydn-golden-qFpIQMc33VM-unsplash.jpg",
+        },
 
-          $(".titulo").html(data.titulo);
-          $("p").html(data.titulo);
-          $(".ingredientes").html(data.ingredientes);
-          $(".preparo").html(data.preparo);
-        }).fail(function () {
-          console.log("check your data");
-        });
-      });
+        {
+          id: "003",
+          titulo: "Massa de pizza",
+          ingredientes:
+            "1 xícara de farinha pronta com fermento, 1 xícara de iogurte Grego ou natural",
+          ingredientesBase: {
+            0: "3",
+            1: "Farinha",
+            2: "Iogurte",
+            3: "Fermento",
+          },
+          preparo:
+            "Em uma tigela, misture a farinha e o iogurte; misture a massa até formar uma bola. Coloque a massa em uma superfície enfarinhada e deixe sovar por 5-8 minutos. Com um rolo de macarrão, deixe a massa em formato de pizza e depois adicione as coberturas. Pré-aqueça o forno. Coloque a pizza no forno em temperatura máxima por 12 minutos.",
+          imagem: "./imagens/pinar-kucuk-Ae7jQFDTPk4-unsplash.jpg",
+        },
+      ];
+
+      for (let i in tableData) {
+        let row = `
+          <tr>
+              <td>${tableData[i].id}</td>
+              <td>${tableData[i].titulo}</td>
+              <td>${tableData[i].ingredientes}</td>
+              <td>${tableData[i].ingredientesBase}</td>
+              <td>${tableData[i].imagem}</td>
+          </tr>
+      `;
+
+        let table = $("#table-body");
+        table.append(row);
+      }
     </script>
   </body>
 </html>
