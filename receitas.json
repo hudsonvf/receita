@@ -1,15 +1,55 @@
 [
   {
     "id": "001",
-    "titulo": "Mousssssse de limão",
-    "ingredientes": "1 lata de leite condensado, 1 lata de creme de leite, 1/2 xícara de limão espremido",
-    "ingredientesBase": {
-      "0": "3",
-      "1": "Leite condensado",
-      "2": "Creme de leite",
-      "3": "Limao"
-    },
-    "preparo": "Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco de limão aos poucos. Quando a massa ficar consistente, coloque em um recipiente de vidro e leva à geladeira.",
-    "imagem": "./imagens/delfina-iacub-oFHTVZITMoc-unsplash.jpg"
+    "titulo": "Mousse de limão",
+    "ingredientes": "- 1 lata de leite condensado,<br/> - 1 lata de creme de leite,<br/> - 1/2 xícara de limão espremido",
+    "preparo": "Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco...",
+    "preparoCompleto": "Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco de limão aos poucos. Quando a massa ficar consistente, coloque em um recipiente de vidro e leva à geladeira.",
+    "imagem": "./delfina-iacub-oFHTVZITMoc-unsplash.jpg"
+  },
+
+  {
+    "id": "002",
+    "titulo": "Bolo para café da tarde",
+    "ingredientes": "- 3 ovos,<br/> - 2/3 de xícara de farinha com fermento,<br/> - 1/2 xícara de açúcar refinado",
+    "preparo": "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, ...",
+    "preparoCompleto": "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse.",
+    "imagem": "./haydn-golden-qFpIQMc33VM-unsplash.jpg"
+  },
+
+  {
+    "id": "003",
+    "titulo": "Massa de pizza",
+    "ingredientes": "- 1 xícara de farinha pronta com fermento,<br/> - 1 xícara de iogurte Grego ou natural, <br/> - 270g de molho de tomate",
+    "preparo": "Em uma tigela, misture a farinha e o iogurte; misture a massa até formar uma bola. Coloque a massa...",
+    "preparoCompleto": "Em uma tigela, misture a farinha e o iogurte; misture a massa até formar uma bola. Coloque a massa em uma superfície enfarinhada e deixe sovar por 5-8 minutos. Forno por 12 minutos.",
+    "imagem": "./pinar-kucuk-Ae7jQFDTPk4-unsplash.jpg"
+  },
+
+  {
+    "id": "004",
+    "titulo": "Bolo para café da tarde",
+    "ingredientes": "- 3 ovos,<br/> - 2/3 de xícara de farinha com fermento,<br/> - 1/2 xícara de açúcar refinado",
+    "preparo": "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme...",
+    "preparoCompleto": "Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse.",
+    "imagem": "./haydn-golden-qFpIQMc33VM-unsplash.jpg"
+  },
+
+  {
+    "id": "005",
+    "titulo": "Massa de pizza",
+    "ingredientes": "- 1 xícara de farinha pronta com fermento,<br/> - 1 xícara de iogurte Grego ou natural, <br/> - 270g de molho de tomate",
+    "preparo": "Em uma tigela, misture a farinha e o iogurte; misture a massa até formar uma bola. Coloque a massa...",
+    "preparoCompleto": "Em uma tigela, misture a farinha e o iogurte; misture a massa até formar uma bola. Coloque a massa em uma superfície enfarinhada e deixe sovar por 5-8 minutos. Forno por 12 minutos.",
+    "imagem": "./pinar-kucuk-Ae7jQFDTPk4-unsplash.jpg"
+  },
+
+  {
+    "id": "006",
+    "titulo": "Mousse de limão",
+    "ingredientes": "- 1 lata de leite condensado,<br/> - 1 lata de creme de leite,<br/> - 1/2 xícara de limão espremido",
+    "preparo": "Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco ...",
+    "preparoCompleto": "Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco de limão aos poucos. Quando a massa ficar consistente, coloque em um recipiente de vidro e leva à geladeira.",
+    "imagem": "./delfina-iacub-oFHTVZITMoc-unsplash.jpg"
   }
 ]
