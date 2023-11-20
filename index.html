@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,14 +17,13 @@
           <th>id</th>
           <th>titulo</th>
           <th>ingredientes</th>
-          <th>ingredientesBase</th>
           <th>preparo</th>
           <th>imagem</th>
         </thead>
         <tbody id="table-body"></tbody>
       </table>
     </div>
-    <script type="text/javascript">
+    <script>
       let tableData = [
         {
           id: "001",
@@ -81,7 +80,7 @@
               <td>${tableData[i].id}</td>
               <td>${tableData[i].titulo}</td>
               <td>${tableData[i].ingredientes}</td>
-              <td>${tableData[i].ingredientesBase}</td>
+              <td>${tableData[i].preparo}</td>
               <td>${tableData[i].imagem}</td>
           </tr>
       `;
