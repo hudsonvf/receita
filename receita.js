@@ -3,22 +3,22 @@ fetch("receitas.json")
     .then(function (response) {
         return response.json();
     })
-    .then(function (receituario) {
-        let substituir = document.querySelector('#table-body');
-        let conteudo = "";
+    .then(function (getListaIngredientes) {
+        let getCard = document.querySelector('#table-body');
+        let preencheCatalogo = "";
 
-        for (let i in receituario) {
-            conteudo += `
+        for (let i in getListaIngredientes) {
+            preencheCatalogo += `
             
             <div class="col-sm-4 mb-4 rounded-4">
                 <div class="card h600 shadow">
-                    <img src="${receituario[i].imagem}" class="card-img-top tdimg">
+                    <img src="${getListaIngredientes[i].imagem}" class="card-img-top tdimg">
                     <div class="card-body">
-                        <h5 class="card-title mt-2 card-titulo">${receituario[i].titulo}</h5>
+                        <h5 class="card-title mt-2 card-titulo">${getListaIngredientes[i].titulo}</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> ${receituario[i].ingredientes}</li>
-                        <li class="list-group-item">${receituario[i].preparo}</li>
+                        <li class="list-group-item"> ${getListaIngredientes[i].ingredientes}</li>
+                        <li class="list-group-item">${getListaIngredientes[i].preparo}</li>
                     </ul>
                     <div class="card-body">
                     <a href="#" class="btn btn-primary btn-receita" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -37,11 +37,11 @@ fetch("receitas.json")
                     </div>
                     <div class="modal-body">
                         <div class="card">
-                            <img src="${receituario[i].imagem}" class="card-img-top tdimg">
-                            <h5 class="card-title m-3">${receituario[i].titulo}</h5>
+                            <img src="${getListaIngredientes[i].imagem}" class="card-img-top tdimg">
+                            <h5 class="card-title m-3">${getListaIngredientes[i].titulo}</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"> ${receituario[i].ingredientes}</li>
-                                <li class="list-group-item">${receituario[i].preparoCompleto}</li>
+                                <li class="list-group-item"> ${getListaIngredientes[i].ingredientes}</li>
+                                <li class="list-group-item">${getListaIngredientes[i].preparoCompleto}</li>
                             </ul>
                         </div>
                     </div>
@@ -53,5 +53,21 @@ fetch("receitas.json")
             </div>
         `;
         }
-        substituir.innerHTML = conteudo;
+        getCard.innerHTML = preencheCatalogo;
+    })
+    .catch(error => {
+        console.log(error);
     });
+
+// Outra maneira
+//
+// $.get('./receitas.json')
+//     .done(data => {
+//         let parseData;
+//         try {
+//             parsedData = JSON.parse(data);
+//         } catch (err) {
+//             parsedData = {};
+//         }
+//     });
+//
